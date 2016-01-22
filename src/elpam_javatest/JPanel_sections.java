@@ -9,27 +9,13 @@ package elpam_javatest;
  *
  * @author Matus
  */
-public final class DetailsJFrame extends javax.swing.JFrame {
-    
+public class JPanel_sections extends javax.swing.JPanel {
 
     /**
-     * Creates new form DetailsJFrame
+     * Creates new form NewJPanel
      */
-    public DetailsJFrame() {
+    public JPanel_sections() {
         initComponents();
-        init();
-        disinit();
-    }
-    
-    public void init(){
-        
-        setVisible(true);
-    }
-    
-    public void disinit(){
-        
-        setVisible(false);
-       setDefaultCloseOperation(WelcomeScreenJFrame.DISPOSE_ON_CLOSE);
     }
 
     /**
@@ -41,11 +27,6 @@ public final class DetailsJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel_ground_resistance_detail3 = new javax.swing.JLabel();
-        jTextField_length_detail3 = new javax.swing.JTextField();
-        jLabel_length_unit3 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
         jPanel_section_detail = new javax.swing.JPanel();
         jLabel_tower_icon = new javax.swing.JLabel();
         jCheckBox_complete = new javax.swing.JCheckBox();
@@ -91,28 +72,9 @@ public final class DetailsJFrame extends javax.swing.JFrame {
         jTextField_ground_resistance_detail = new javax.swing.JTextField();
         jLabel_ground_resistance_detail = new javax.swing.JLabel();
 
-        jLabel_ground_resistance_detail3.setText(" sag:");
-
-        jLabel_length_unit3.setText("m");
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Computation details");
-
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel3.setText("Computation details");
-
-        jButton5.setBackground(new java.awt.Color(0, 153, 0));
-        jButton5.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        jButton5.setText("Confirm details");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-
         jPanel_section_detail.setBorder(javax.swing.BorderFactory.createEtchedBorder(null, new java.awt.Color(51, 51, 51)));
 
-        jLabel_tower_icon.setText("icon of the tower");
+        jLabel_tower_icon.setIcon(new javax.swing.ImageIcon("C:\\Users\\Matus\\Documents\\NetBeansProjects\\elpam_javatest\\src\\towers_logo_small.jpg")); // NOI18N
 
         jCheckBox_complete.setText("check complete");
         jCheckBox_complete.setEnabled(false);
@@ -124,11 +86,6 @@ public final class DetailsJFrame extends javax.swing.JFrame {
 
         jButton_ADD_detail.setBackground(new java.awt.Color(0, 153, 0));
         jButton_ADD_detail.setText("ADD");
-        jButton_ADD_detail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton_ADD_detailActionPerformed(evt);
-            }
-        });
 
         jLabel_section_detiail.setText("Section 1");
         jLabel_section_detiail.setVerticalAlignment(javax.swing.SwingConstants.TOP);
@@ -426,7 +383,7 @@ public final class DetailsJFrame extends javax.swing.JFrame {
                                 .addComponent(jButton_LOAD_detail, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jCheckBox_complete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jLabel_tower_icon, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(jLabel_tower_icon, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel_section_detiail, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel_section_detailLayout.createSequentialGroup()
                         .addGroup(jPanel_section_detailLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -442,94 +399,32 @@ public final class DetailsJFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5))
-                    .addComponent(jPanel_section_detail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+            .addComponent(jPanel_section_detail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jButton5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel_section_detail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(57, Short.MAX_VALUE))
+            .addComponent(jPanel_section_detail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jCheckBox_completeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox_completeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox_completeActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton_COPY_detailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_COPY_detailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_jButton_COPY_detailActionPerformed
 
     private void jButton_GroundWires_detailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_GroundWires_detailActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton_GroundWires_detailActionPerformed
 
-    private void jButton_COPY_detailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_COPY_detailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton_COPY_detailActionPerformed
-
-    private void jButton_ADD_detailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ADD_detailActionPerformed
-        // TODO add your handling code here:
-        JPanel_sections panel = new JPanel_sections();
-        jPanel_section_detail.add(panel);
-    }//GEN-LAST:event_jButton_ADD_detailActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DetailsJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DetailsJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DetailsJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DetailsJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new DetailsJFrame().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton_ADD_detail;
     private javax.swing.JButton jButton_COPY_detail;
     private javax.swing.JButton jButton_DEL_detail;
@@ -538,7 +433,6 @@ public final class DetailsJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton_NEW_detail;
     private javax.swing.JButton jButton_conductors_detail;
     private javax.swing.JCheckBox jCheckBox_complete;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel_CondType_detail;
     private javax.swing.JLabel jLabel_WireNumber_detail;
     private javax.swing.JLabel jLabel_WireType_detail;
@@ -546,11 +440,9 @@ public final class DetailsJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_first_conductor;
     private javax.swing.JLabel jLabel_first_wire;
     private javax.swing.JLabel jLabel_ground_resistance_detail;
-    private javax.swing.JLabel jLabel_ground_resistance_detail3;
     private javax.swing.JLabel jLabel_ground_resistane_unit;
     private javax.swing.JLabel jLabel_length_detail;
     private javax.swing.JLabel jLabel_length_unit;
-    private javax.swing.JLabel jLabel_length_unit3;
     private javax.swing.JLabel jLabel_sag_first_conductor;
     private javax.swing.JLabel jLabel_sag_first_conductor_unit;
     private javax.swing.JLabel jLabel_sag_first_wire;
@@ -573,7 +465,6 @@ public final class DetailsJFrame extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner_bundle_detail;
     private javax.swing.JTextField jTextField_ground_resistance_detail;
     private javax.swing.JTextField jTextField_length_detail;
-    private javax.swing.JTextField jTextField_length_detail3;
     private javax.swing.JTextField jTextField_sag_first_conductor;
     private javax.swing.JTextField jTextField_sag_first_wire;
     private javax.swing.JTextField jTextField_sag_second_conductor;
